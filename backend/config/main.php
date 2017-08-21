@@ -49,14 +49,14 @@ return [
                 'baseUrl' => '@web/../themes/adminlte',
             ],
         ],
-        /*
+        
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
+            'enablePrettyUrl' => false,
+            'showScriptName' => true,
             'rules' => [
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];
