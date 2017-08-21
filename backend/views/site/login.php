@@ -21,7 +21,7 @@ $fieldOptions2 = [
 
 <div class="login-box">
     <div class="login-logo">
-        <a href="#"><b>Admin</b>LTE</a>
+        <a href="#"><b>Kiwi</b>Tools</a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
@@ -52,6 +52,7 @@ $fieldOptions2 = [
 
 
         <?php ActiveForm::end(); ?>
+<!--
 
         <div class="social-auth-links text-center">
             <p>- OR -</p>
@@ -60,10 +61,11 @@ $fieldOptions2 = [
             <a href="#" class="btn btn-block btn-social btn-google-plus btn-flat"><i class="fa fa-google-plus"></i> Sign
                 in using Google+</a>
         </div>
-        <!-- /.social-auth-links -->
+         /.social-auth-links 
 
         <a href="#">I forgot my password</a><br>
         <a href="register.html" class="text-center">Register a new membership</a>
+-->
 
     </div>
     <!-- /.login-box-body -->

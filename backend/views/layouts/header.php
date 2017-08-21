@@ -239,8 +239,7 @@ use yii\helpers\Html;
                                  alt="User Image"/>
 
                             <p>
-                                Alexander Pierce - Web Developer
-                                <small>Member since Nov. 2012</small>
+                                <?=Yii::$app->user->identity->username;?>
                             </p>
                         </li>
                         <!-- Menu Body -->
