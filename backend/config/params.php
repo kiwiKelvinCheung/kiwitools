@@ -1,0 +1,6 @@
+<?php
+return [
+    'adminEmail' => 'admin@example.com',
+    'COCO01Identity'=>'QcREitojMhaaxKYsqXdPk3ZbfGybbLpRFJsSWhxgF9d5uCcqDpl7e_LACRZh-r7_Rf4A-xqpc6sepIHtdeWpTxglIszPJRJs3hNV02dY1MpQ0GZDm4IkGUUhIPsmXp27fmhidK5YW4PFnH1bptdazuRcEozgNOngSbbyOL7yE22-vU1-Xqas5bJRNZQpfJOUwvKvmPWK2eyXkUvWYyoGZuasLvl3obEzhpMBNjXh8YOsrjZdXtVpmzH264gdc_nQEDhFypyToTEfwYGvJvJFn7D4BPxyq9j_eoVHALEc24s74AdH6VVbSQBDBzanE_o-sTlF8f713BopU4KWAn6ZB94F3dvl7571u_Esz6NNWRM8lbw3OPPNuRyLPSKfgrO4Sb78LAztnOV1T6bc3oZF7zj2Dx4LlJBIYtiU64M5Bw33Mf5zh97W08VL0dt4VTGPTc72gYAN4GhaA1JOsMp39Ii4YsdgroTeSr0k4TzwPKw',
+    '__RequestVerificationToken'=>'FMO-O7_c1wppT-JZ--byJrvMBOzuRh8lfsde9-_4BGvNbeVlJ4BtEL57paiuuI8Co_IMGgaU1r4ZuIlBm4m-UWQWkThOyhpe6xoVsSfiRhg1'
+];
