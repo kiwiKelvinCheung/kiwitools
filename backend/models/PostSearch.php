@@ -65,13 +65,13 @@ class PostSearch extends Post
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'title' => $this->title,
-            'today_view' => $this->today_view,
-            'author' => $this->author,
-            'category' => $this->category,
-            'created_at' => $this->created_at,
-            'status' => $this->status,
-            'updated_at' => $this->updated_at,
+            //'title' => $this->title,
+            //'today_view' => $this->today_view,
+            //'author' => $this->author,
+            //'category' => $this->category,
+            //'created_at' => $this->created_at,
+            //'status' => $this->status,
+            //'updated_at' => $this->updated_at,
             
         ]);
         if(!empty($this->post_date) && strpos($this->post_date, '-') !== false) {
