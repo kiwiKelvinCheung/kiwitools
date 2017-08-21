@@ -50,12 +50,12 @@ return [
             ],
         ],
         
-        'urlManager' => [
-            'enablePrettyUrl' => false,
-            'showScriptName' => true,
-            'rules' => [
-            ],
-        ],
+        //'urlManager' => [
+        //    'enablePrettyUrl' => false,
+        //    'showScriptName' => true,
+        //    'rules' => [
+        //    ],
+        //],
         
     ],
     'params' => $params,
