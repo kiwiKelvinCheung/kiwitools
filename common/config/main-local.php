@@ -4,8 +4,8 @@ return [
         'db' => [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=kiwitools',
-            'username' => 'kiwitools',
-            'password' => 'ki608212',
+            'username' => 'root',
+            'password' => '',
             'charset' => 'utf8',
         ],
         'urlManager' => [
