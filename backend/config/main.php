@@ -5,7 +5,7 @@ $params = array_merge(
     require __DIR__ . '/params.php',
     require __DIR__ . '/params-local.php'
 );
-
+Yii::setAlias('@coco01', 'http://www.coco01.net/');
 return [
     'id' => 'kiwi-app',
     'name'=>'Kiwi Tools',
@@ -50,12 +50,11 @@ return [
             ],
         ],
         
-        //'urlManager' => [
-        //    'enablePrettyUrl' => false,
-        //    'showScriptName' => true,
-        //    'rules' => [
-        //    ],
-        //],
+        'urlManager' => [
+            'rules' => [
+                '<controller:post>/<id:\w+>' => 'post/site-redirect',
+            ],
+        ],
         
     ],
     'params' => $params,

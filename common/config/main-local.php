@@ -13,6 +13,9 @@ return [
             'showScriptName' => false,
             'enablePrettyUrl' => true,
             'rules' => [
+              '<controller:post>/<id:\d+>' => 'post/site-redirect',
+              '<controller:blog>/<id:\w+>' => 'post/site-redirect',
+              '<controller:category>/<id:\d+>' => 'post/site-redirect',
               '<controller:\w+>/<id:\d+>' => '<controller>/view',
               '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
               '<controller:\w+>/<action:\w+>' => '<controller>/<action>',

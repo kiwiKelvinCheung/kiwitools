@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+use yii\helpers\Url;
+
 use yii\bootstrap\ActiveForm;
 use yii\helpers\ArrayHelper;
 use jino5577\daterangepicker\DateRangePicker;
@@ -12,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 ?>
 <div class="post-view-index">
-
+    <input type="text" id="clipboard" class="clipboard hide" value="">
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 <?=Html::beginForm(['post/select-delete'],'post');?>
@@ -44,6 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute'=> 'category',
                 'format' => 'raw',
             ],
+            
             [
                 'attribute'=> 'post_date',
                 'format' => 'raw',
@@ -75,9 +78,11 @@ $this->params['breadcrumbs'][] = $this->title;
                              'onclick' => "
                                 if (confirm('確認使用?')) {
                                     $.ajax('$url', {
-                                        type: 'POST'
+                                        type: 'POST',
+                                        async:false,
                                     }).done(function(data) {
                                         $.pjax.reload({container: '#pjax-container'});
+                                        copytext(data);
                                     });
                                 }
                                 return false;
@@ -94,4 +99,6 @@ $this->params['breadcrumbs'][] = $this->title;
     
 <?php Pjax::end(); ?></div>
 <?= Html::endForm();?> 
+<?php $this->registerJsFile('@web/js/copy.js'); ?>
+
 

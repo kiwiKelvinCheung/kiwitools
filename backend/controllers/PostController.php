@@ -15,6 +15,7 @@ use yii\httpclient\Client;
 use yii\httpclient\FormatterInterface;
 use yii\httpclient\ParserInterface;
 use yii\httpclient\Response;
+use Eddmash\Clipboard\Clipboard;
 /**
  * Site controller
  */
@@ -34,7 +35,7 @@ class PostController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index','get-post','update'],
+                        'actions' => ['logout', 'index','get-post','update','site-redirect'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -164,12 +165,26 @@ class PostController extends Controller
     }
     public function actionUpdate($id)
     {
+        $eily_author_link = '?r=Eilly';
         $model = $this->findModel($id);
         $model->used_by  = Yii::$app->user->identity->id;
-        $model->save();
-        if (!Yii::$app->request->isAjax) {
-            return $this->redirect(['get-post']);
+        //$model->save();
+        $html = \serhatozles\simplehtmldom\SimpleHTMLDom::str_get_html($model->title);
+        foreach($html->find('a') as $element){
+            $post_link = explode('?r=',$element->href)[0]; 
+            
         }
+        if (!Yii::$app->request->isAjax) {
+            echo Yii::getAlias('@coco01').$post_link.$eily_author_link;
+        }else{
+            echo Yii::getAlias('@coco01').$post_link.$eily_author_link;
+        }
+    }
+    public function actionSiteRedirect(){
+        $request = Yii::$app->request;
+        //echo Yii::getAlias('@coco01').$request->url;
+        $this->redirect(Yii::getAlias('@coco01').$request->url);
+        
     }
     protected function findModel($id)
     {

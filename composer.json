@@ -23,7 +23,8 @@
         "linslin/yii2-curl": "*",
         "yiisoft/yii2-httpclient": "^2.0@dev",
         "serhatozles/yii2-simplehtmldom": "dev-master",
-        "jino5577/yii2-date-range-picker": "*"
+        "jino5577/yii2-date-range-picker": "*",
+        "eddmash/yii2-clipboard": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

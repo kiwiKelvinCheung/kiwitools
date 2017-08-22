@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "26a43c53783b2b7f80fe16de37787bec",
+    "content-hash": "32f4b370c5687ab6c28c00776d6ca37c",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -88,6 +88,26 @@
             },
             "type": "bower-asset",
             "time": "2017-08-09T04:09:35+00:00"
+        },
+        {
+            "name": "bower-asset/clipboard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zenorocha/clipboard.js.git",
+                "reference": "3c0dfe5a38972ad4530136691d480b855a8f09ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zenorocha/clipboard.js/zipball/3c0dfe5a38972ad4530136691d480b855a8f09ad",
+                "reference": "3c0dfe5a38972ad4530136691d480b855a8f09ad",
+                "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ],
+            "time": "2017-06-30T19:30:30+00:00"
         },
         {
             "name": "bower-asset/inputmask",
@@ -423,6 +443,54 @@
                 "parser"
             ],
             "time": "2017-07-24T09:37:08+00:00"
+        },
+        {
+            "name": "eddmash/yii2-clipboard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eddmash/yii2-clipboard.git",
+                "reference": "80ebc747e8b002b992fccb50c69029059b5b34f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eddmash/yii2-clipboard/zipball/80ebc747e8b002b992fccb50c69029059b5b34f2",
+                "reference": "80ebc747e8b002b992fccb50c69029059b5b34f2",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/clipboard": "*",
+                "yiisoft/yii2": ">=2.0.6"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Eddmash\\Clipboard\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "EDDILBERT MACHARIA",
+                    "email": "edd.cowan@gmail.com",
+                    "homepage": "http://eddmash.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The Clipboard js extension for the Yii2 framework",
+            "keywords": [
+                "clipboard js",
+                "yii2"
+            ],
+            "time": "2016-11-11T15:41:19+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -3720,7 +3788,8 @@
     "stability-flags": {
         "yiisoft/yii2-gii": 20,
         "yiisoft/yii2-httpclient": 20,
-        "serhatozles/yii2-simplehtmldom": 20
+        "serhatozles/yii2-simplehtmldom": 20,
+        "eddmash/yii2-clipboard": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
