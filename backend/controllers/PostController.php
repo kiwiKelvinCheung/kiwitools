@@ -110,12 +110,15 @@ class PostController extends Controller
                       //$post_div = \serhatozles\simplehtmldom\SimpleHTMLDom::str_get_html($element);
                         $post = new CreatePost();
                         foreach($element->find('.title') as $post_title){
+                            $disable_pjax_attr ="data-pjax='0'";
                             $find_post_title = $post_title->outertext;
-                            $exists = Post::find()->where(['title'=>$find_post_title])->exists(); 
-                            $post->title = $post_title->outertext;
+                            $substr = 'target="_blank"';
+                            $unable_pjax_title = str_replace($substr,$substr.' '.$disable_pjax_attr,$find_post_title);
+                            $exists = Post::find()->where(['title'=>$unable_pjax_title])->exists(); 
+                            $post->title = $unable_pjax_title;
                         }
                         if($exists){
-                            $post = Post::find()->where( ['title'=>$find_post_title])->one();
+                            $post = Post::find()->where( ['title'=>$unable_pjax_title])->one();
                         }
                         //if(findBytitle($post->title))
                         foreach($element->find('a.username') as $post_author){
