@@ -21,6 +21,9 @@ body {
     z-index: 10001;
     display:none;
 }
+.post-view-index{
+    overflow: auto;
+}
 .loading_text{
     font-family:Microsoft JhengHei;
 }
