@@ -31,7 +31,7 @@
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
                     ['label' => 'kiwi-app', 'options' => ['class' => 'header']],
-                    ['label' => 'Post', 'icon' => 'fa-clone', 'url' => ['post/index']],
+                    //['label' => 'Post', 'icon' => 'fa-clone', 'url' => ['post/index']],
                     ['label' => 'View Post', 'icon' => 'fa-clone', 'url' => ['post/get-post']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                 ],
