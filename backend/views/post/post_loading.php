@@ -13,12 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="post-loading-index">
 
-<?php 
-echo Progress::widget([
-    'percent' => 20,
-    'barOptions' => ['class' => 'progress-bar-success'],
-    'options' => ['class' => 'active progress-striped']
-]);    
-?>
 </div>
+<?php $this->registerJsFile('@web/js/loading.js'); ?>
+<?php $this->registerJsFile('@web/js/copy.js'); ?>
 

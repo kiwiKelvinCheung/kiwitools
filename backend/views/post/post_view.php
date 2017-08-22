@@ -13,9 +13,34 @@ $this->title = 'Post View Of Coco01';
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
+<div class="post-get-loading">
+    <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
+</div>
 <div class="post-view-index">
-    <input type="text" id="clipboard" class="clipboard hide" value="">
+    <input type="text" id="clipboard" class="clipboard" style="top:-99px;position:absolute;">
     <h1><?= Html::encode($this->title) ?></h1>
+    <?php 
+        $url = '/post/update-post-list';
+    echo Html::a('<span class="glyphicon glyphicon-download-alt"></span> 更新列表', '#', 
+                            ['title' => Yii::t('yii', 'update-post-list'),
+                            'aria-label' => Yii::t('yii', 'update-post-list'),
+                             'class'=>'btn btn-twitter action_btn',
+                             'onclick' => "
+                                if (confirm('確認更新?')) {
+                                    $('.post-get-loading').show();
+                                    $.ajax('$url', {
+                                        type: 'POST',
+                                    }).done(function(data) {
+                                        $.pjax.reload({container: '#pjax-container'});
+                                        $('.post-get-loading').hide();
+                                    });
+                                }
+                                return false;
+                            ",
+                        ]);?>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 <?=Html::beginForm(['post/select-delete'],'post');?>
 <?php Pjax::begin(['id' => 'pjax-container']); ?>    <?= GridView::widget([
@@ -81,6 +106,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         type: 'POST',
                                         async:false,
                                     }).done(function(data) {
+                                        console.log(data);
                                         $.pjax.reload({container: '#pjax-container'});
                                         copytext(data);
                                     });
