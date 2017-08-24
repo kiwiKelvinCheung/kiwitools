@@ -226,18 +226,23 @@ class PostController extends Controller
     {
         $eily_author_link = '?r=Eilly';
         $model = $this->findModel($id);
-        $model->used_by  = Yii::$app->user->identity->id;
-        $model->save();
-        $html = \serhatozles\simplehtmldom\SimpleHTMLDom::str_get_html($model->title);
-        foreach($html->find('a') as $element){
-            $post_link = explode('?r=',$element->href)[0]; 
-            
-        }
-        if (!Yii::$app->request->isAjax) {
-            echo Yii::getAlias('@coco01').$post_link.$eily_author_link;
+        if($model->used_by==null){
+            $model->used_by  = Yii::$app->user->identity->id;
+            $model->save();
+            $html = \serhatozles\simplehtmldom\SimpleHTMLDom::str_get_html($model->title);
+            foreach($html->find('a') as $element){
+                $post_link = explode('?r=',$element->href)[0]; 
+                
+            }
+            if (!Yii::$app->request->isAjax) {
+                echo Yii::getAlias('@coco01').$post_link.$eily_author_link;
+            }else{
+                echo Yii::getAlias('@coco01').$post_link.$eily_author_link;
+            }
         }else{
-            echo Yii::getAlias('@coco01').$post_link.$eily_author_link;
+            echo 'error';
         }
+
     }
     public function actionSiteRedirect(){
         $request = Yii::$app->request;

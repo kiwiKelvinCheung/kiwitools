@@ -107,7 +107,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         type: 'POST',
                                         async:false,
                                     }).done(function(data) {
-                                        console.log(data);
+                                        
                                         $.pjax.reload({container: '#pjax-container'});
                                         copytext(data);
                                     });
