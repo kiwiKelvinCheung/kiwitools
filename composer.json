@@ -24,7 +24,8 @@
         "yiisoft/yii2-httpclient": "^2.0@dev",
         "serhatozles/yii2-simplehtmldom": "dev-master",
         "jino5577/yii2-date-range-picker": "*",
-        "eddmash/yii2-clipboard": "@dev"
+        "eddmash/yii2-clipboard": "@dev",
+        "aryelds/yii2-sweet-alert": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

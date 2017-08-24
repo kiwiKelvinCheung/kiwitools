@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "32f4b370c5687ab6c28c00776d6ca37c",
+    "content-hash": "fa2341450c083e27a0689d0497b447f1",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -45,6 +45,55 @@
                 "web"
             ],
             "time": "2017-07-02T15:38:16+00:00"
+        },
+        {
+            "name": "aryelds/yii2-sweet-alert",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aryelds/yii2-sweet-alert.git",
+                "reference": "252298f5600cb809d904595952f94e03396c2590"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aryelds/yii2-sweet-alert/zipball/252298f5600cb809d904595952f94e03396c2590",
+                "reference": "252298f5600cb809d904595952f94e03396c2590",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/sweetalert": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "aryelds\\sweetalert\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Aryel Santos",
+                    "email": "aryel.ds@gmail.com"
+                }
+            ],
+            "description": "A widget to flash sweet alert messages using SweetAlert plugin",
+            "keywords": [
+                "alert",
+                "extension",
+                "widget",
+                "yii2",
+                "yii2 sweet alert",
+                "yii2-sweet-alert"
+            ],
+            "time": "2016-10-20T16:25:01+00:00"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -185,6 +234,26 @@
                 "shasum": null
             },
             "type": "bower-asset"
+        },
+        {
+            "name": "bower-asset/sweetalert",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t4t5/sweetalert.git",
+                "reference": "32bd141c24cbc56dd4838ac77c15fa7f96da002d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t4t5/sweetalert/zipball/32bd141c24cbc56dd4838ac77c15fa7f96da002d",
+                "reference": "32bd141c24cbc56dd4838ac77c15fa7f96da002d",
+                "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ],
+            "time": "2016-12-15T09:39:03+00:00"
         },
         {
             "name": "bower-asset/typeahead.js",
@@ -3789,7 +3858,8 @@
         "yiisoft/yii2-gii": 20,
         "yiisoft/yii2-httpclient": 20,
         "serhatozles/yii2-simplehtmldom": 20,
-        "eddmash/yii2-clipboard": 20
+        "eddmash/yii2-clipboard": 20,
+        "aryelds/yii2-sweet-alert": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

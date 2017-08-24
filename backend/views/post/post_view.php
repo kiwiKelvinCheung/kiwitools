@@ -4,9 +4,9 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 use yii\helpers\Url;
-
 use yii\bootstrap\ActiveForm;
 use yii\helpers\ArrayHelper;
+use common\models\Post;
 use jino5577\daterangepicker\DateRangePicker;
 
 $this->title = 'Post View Of Coco01';
@@ -69,6 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             [
                 'attribute'=> 'category',
+                'filter'=>Html::activeDropDownList($searchModel,'category',$dropdown_category,['class'=>'form-control','prompt' => '選擇分類']),
                 'format' => 'raw',
             ],
             

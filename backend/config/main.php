@@ -5,6 +5,7 @@ $params = array_merge(
     require __DIR__ . '/params.php',
     require __DIR__ . '/params-local.php'
 );
+ini_set('max_execution_time', 3600);
 Yii::setAlias('@coco01', 'http://www.coco01.net/');
 return [
     'id' => 'kiwi-app',
@@ -30,9 +31,10 @@ return [
         'session' => [
             // this is the name of the session cookie used for login on the backend
             'name' => 'kiwi-backend',
+            'timeout' => 657567576,
         ],
         'log' => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
+            //'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
