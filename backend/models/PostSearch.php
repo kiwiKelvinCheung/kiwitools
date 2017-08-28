@@ -77,7 +77,11 @@ class PostSearch extends Post
         ]);
         if(!empty($this->post_date) && strpos($this->post_date, '-') !== false) {
 			list($start_date, $end_date) = explode(' - ', $this->post_date);
-            $query->andFilterWhere(['between', 'post_date_timestamp', strtotime($start_date), strtotime($end_date)]);
+            $query->andFilterWhere(['between', 'post_date_timestamp', strtotime($start_date), strtotime($end_date)])
+                ->andFilterWhere(['like', 'title', $this->title])
+                ->andFilterWhere(['like', 'today_view', $this->today_view])
+                ->andFilterWhere(['like', 'author', $this->author])
+                ->andFilterWhere(['like', 'category', $this->category]);
         }else{
             $query->andFilterWhere(['like', 'title', $this->title])
                 ->andFilterWhere(['like', 'today_view', $this->today_view])
