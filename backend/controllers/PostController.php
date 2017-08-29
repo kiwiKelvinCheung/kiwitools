@@ -95,7 +95,7 @@ class PostController extends Controller
             }
             while($start_page<$max_page){
                 if($start_page!=0){
-                    $link_params = '?'.'page='.$page.'&date='.$date.'&catId=0';
+                    $link_params = '?'.'page='.$page.'&date='.$date.'&catId='.$catId;
                     $request_url = $url.$link_params;
                 }else{
                     $request_url = $url;
