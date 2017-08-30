@@ -110,11 +110,11 @@ class PostController extends Controller
                 $session['language'] = 'en-US';
                   $response = $client->createRequest()
                         ->setCookies([
-                        ['name' => '__RequestVerificationToken', 'value' => $rvt],
-                        ['name' => 'COCO01Identity', 'value' => $coco01id],
-                        ['name' => '__cfduid', 'value' => $cfduid],
-                        ['name' => '_ga', 'value' => $_ga],
-                        ['name' => '_gid', 'value' => $_gid],
+                        ['name' => '__RequestVerificationToken', 'value' => $this->rvt],
+                        ['name' => 'COCO01Identity', 'value' => $this->coco01id],
+                        ['name' => '__cfduid', 'value' => $this->cfduid],
+                        ['name' => '_ga', 'value' => $this->_ga],
+                        ['name' => '_gid', 'value' => $this->_gid],
                         ])
                       ->setMethod('post')
                       ->setUrl($request_url)
@@ -290,11 +290,11 @@ class PostController extends Controller
                 $session['language'] = 'en-US';
                   $response = $client->createRequest()
                         ->setCookies([
-                        ['name' => '__RequestVerificationToken', 'value' => $RVT],
-                        ['name' => 'COCO01Identity', 'value' => $COCO01Id],
-                        ['name' => '__cfduid', 'value' => $cfduid],
-                        ['name' => '_ga', 'value' => $_ga],
-                        ['name' => '_gid', 'value' => $_gid],
+                        ['name' => '__RequestVerificationToken', 'value' => $this->rvt],
+                        ['name' => 'COCO01Identity', 'value' => $this->coco01id],
+                        ['name' => '__cfduid', 'value' => $this->cfduid],
+                        ['name' => '_ga', 'value' => $this->_ga],
+                        ['name' => '_gid', 'value' => $this->_gid],
                         ])
                       ->setMethod('post')
                       ->setUrl($request_url)
