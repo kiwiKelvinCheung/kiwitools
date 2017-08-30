@@ -27,6 +27,11 @@ class PostController extends Controller
     /**
      * @inheritdoc
      */
+    public $RVT = 'FRIDCRTnd29Q1pNziwE9Oz6g7f_cqZ4fjBsavDdEP0C4--5AdM0fa9IC3HKYO94PsuW0hW32bxwuSs4Obw2IqZ_hner7zzoEzi_iY27qfHA1';
+    public $COCO01Id = 'HWPiUqVszEolmmnB5g4C15VckmVjjaEEG2I1T_qSTCtoX3JD2t3PPrS4kUMJ4W9uv1Gx_mRXoeW_mJKzT_tn8ZrLdpEbNvTx0gN3u3XE45oMPAXOeYQxmjePmvuGTjNhk4AZ7qT3hK0b81Jn8nhVuc43Di1xM3lXNZMbbdrrkhEDSwjrjvQakEKPn0Jb8oZEPvh6HE87Qlo_Ko18lpBYNSIJjFW-bgGwoBq58I1yivpaYT4gEDFUiZWbUcleuGFWg94_11Ye45urbOWyGSNjl1ERnikIJwDZlxxUk4QqNDgDFybpclW7NzFQrZbC8RZ_Vm0emaAZogAYhEcxT7BjaArWDZ_cwF6b44GwvTLqtHLH8c2t6FPIfL6hOwY8FrPlEJfDVDVpyrafe1xbI5v19ToZuxSQue__h_7ON5jBrOwgLUXSji-1ds9QRSHq29bGsUaw3d9qyM1Y2f3FbshG6FlroDAlTZ1mYMixNWkwQZcujQM0L-PT6pc6uWnAavkz';
+    public $cfduid = 'd9ae01210e07e9b42f4e9e9bd3dd600011504069691';
+    public $_ga = 'GA1.2.628135975.1504071798';
+    public $_gid = 'GA1.2.1524570596.1504071798';
     const DATE_FORMAT = 'php:Y-m-d';
     public function behaviors()
     {
@@ -105,11 +110,11 @@ class PostController extends Controller
                 $session['language'] = 'en-US';
                   $response = $client->createRequest()
                         ->setCookies([
-                        ['name' => '__RequestVerificationToken', 'value' => 'uYRPuGfUFedmSDT7WORgdUXxgk6ACNJ7shaNqkQOG3wwnhoKDypu6PB6Ko8XsldlT6aCAExQBqOny_2OSYgYWHcOs60jk_ZB4sYmz1GagJw1'],
-                        ['name' => 'COCO01Identity', 'value' => 'SOR2R5G1hlYvJPCGFlbBHy4Pu8PXLUhl9YkUDuOa2MA0zyTdahkKg2kMag2OF0Mu95S5qY4Vll4yX96i8PmhhRPW-7hRXTz8jTkmL0cLN0X4c6uZXSG3uIlewU1OnX0dof93HI1qeWSfUQMGpubofEltUtZFfS_NV72vU6Ii_C5STpJhTgdoXw0wSiKDOnKmcYCT4SzYcsIJhzLDOLeAQJpwag9JIWfTmxVC5s0eVGfLN7CdW5wfAXlJeUxTPdhuu0BwsA-UExt4lIpZ4rlo_uxlwPWD8V1BhDRm9DuJY4B9pZNlhP1nLbailqniDBbUWycaeDICyNfCC-v1tmyglC_bzvlGMjBT3c0sdHwU8-eZ9aJl7AV2IiBhcX2tj8JLZbtbAhuOmGg-DQatzOXsuN1bIP78ax12TzMtbGwo0HUNAPU4qz8U003ig-AsQQF9tO0I_AA4_5QOFGtJGnRTK8O9CmNn4uej8UjB2pazBMI4R6Pv3yYclV4kOlq_-v7Y'],
-                        ['name' => '__cfduid', 'value' => 'd6c096ab4f7719a83d8c4a335b39ed19c1503979096'],
-                        ['name' => '_ga', 'value' => 'GA1.2.27616028.1503887785'],
-                        ['name' => '_gid', 'value' => 'GA1.2.892276425.1503887785'],
+                        ['name' => '__RequestVerificationToken', 'value' => $RVT],
+                        ['name' => 'COCO01Identity', 'value' => $COCO01Id],
+                        ['name' => '__cfduid', 'value' => $cfduid],
+                        ['name' => '_ga', 'value' => $_ga],
+                        ['name' => '_gid', 'value' => $_gid],
                         ])
                       ->setMethod('post')
                       ->setUrl($request_url)
@@ -285,12 +290,11 @@ class PostController extends Controller
                 $session['language'] = 'en-US';
                   $response = $client->createRequest()
                         ->setCookies([
-                        ['name' => '__RequestVerificationToken', 'value' => 'uYRPuGfUFedmSDT7WORgdUXxgk6ACNJ7shaNqkQOG3wwnhoKDypu6PB6Ko8XsldlT6aCAExQBqOny_2OSYgYWHcOs60jk_ZB4sYmz1GagJw1'],
-                        ['name' => 'COCO01Identity', 'value' => 'SOR2R5G1hlYvJPCGFlbBHy4Pu8PXLUhl9YkUDuOa2MA0zyTdahkKg2kMag2OF0Mu95S5qY4Vll4yX96i8PmhhRPW-7hRXTz8jTkmL0cLN0X4c6uZXSG3uIlewU1OnX0dof93HI1qeWSfUQMGpubofEltUtZFfS_NV72vU6Ii_C5STpJhTgdoXw0wSiKDOnKmcYCT4SzYcsIJhzLDOLeAQJpwag9JIWfTmxVC5s0eVGfLN7CdW5wfAXlJeUxTPdhuu0BwsA-UExt4lIpZ4rlo_uxlwPWD8V1BhDRm9DuJY4B9pZNlhP1nLbailqniDBbUWycaeDICyNfCC-v1tmyglC_bzvlGMjBT3c0sdHwU8-eZ9aJl7AV2IiBhcX2tj8JLZbtbAhuOmGg-DQatzOXsuN1bIP78ax12TzMtbGwo0HUNAPU4qz8U003ig-AsQQF9tO0I_AA4_5QOFGtJGnRTK8O9CmNn4uej8UjB2pazBMI4R6Pv3yYclV4kOlq_-v7Y'],
-                        ['name' => '__cfduid', 'value' => 'd6c096ab4f7719a83d8c4a335b39ed19c1503979096'],
-                        ['name' => '_ga', 'value' => 'GA1.2.85912979.1503979098'],
-                        ['name' => '_gid', 'value' => 'GA1.2.1326677421.1503979098'],
-                        ['name' => '_gid', 'value' => 'GA1.2.1326677421.1503979098'],
+                        ['name' => '__RequestVerificationToken', 'value' => $RVT],
+                        ['name' => 'COCO01Identity', 'value' => $COCO01Id],
+                        ['name' => '__cfduid', 'value' => $cfduid],
+                        ['name' => '_ga', 'value' => $_ga],
+                        ['name' => '_gid', 'value' => $_gid],
                         ])
                       ->setMethod('post')
                       ->setUrl($request_url)
