@@ -31,7 +31,7 @@ class PostController extends Controller
     public $coco01id = '-KjQ_CKmgYwX8LCMZSAHw17vxdlsEYbt-YgCLFXeDl69wa1rY1J2oK8RSpPYe56c11RJLLXQsLSf1It7sfmSHbJ9aUcgeOT6IqVbucHTVc00UIzOceHscSJ8GP50ojbevJDs8OA4UQoPOR5tOoDrHi4RjiYFr0WBIZhoSYOMpWUrrN_jOqdwcPx2FsLo6U994jjWUKFGxQeDmcLXqGIeupkRAFew3zvYbp4MzbwTEsnDhl7jx4e56OpOJtQb1EPGYAyvhsH6xlMJwJMqINvKe3rGVZPWqFWsVAPXvUb0IGvT2ZarIp9nrjp2csCC4Nry4FfC55Vx6eZAJzQlOXZgs91xQThmdL0robsvsb3gQFiHpoQsv4PBbMAiJK3rMDdxZ7dnxSAKbFaiB5yBZ7sUct5x0OKcDpRIrFveYPTBFffrikA0ZvCs16uLz4-mBy68RFj_SnAJn1CDptO8M2z5cWYITTeZfOI3Bzd0wNkvXFXwAGDmq4HSF-F5lJlo4EuL';
     public $_ga = 'GA1.2.628135975.1504071798';
     public $_gid = 'GA1.2.1524570596.1504071798';
-    public $this->cfduid = 'd9ae01210e07e9b42f4e9e9bd3dd600011504069691';
+    public $cfduid = 'd9ae01210e07e9b42f4e9e9bd3dd600011504069691';
     const DATE_FORMAT = 'php:Y-m-d';
     public function behaviors()
     {
