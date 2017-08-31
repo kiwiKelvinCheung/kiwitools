@@ -54,7 +54,7 @@ class ProcessController extends Controller
     }
 
     public function actionTestHttp(){
-        return $this->render('test_http');
+        return $this->render('test-http');
     }
     public function actionHttpAds()
     {
