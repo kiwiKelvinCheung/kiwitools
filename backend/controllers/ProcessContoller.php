@@ -5,7 +5,20 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use common\models\LoginForm;
+use yii\helpers\ArrayHelper;
+use common\models\Post;
+use common\models\Category;
+use backend\models\CreatePost;
+use backend\models\PostSearch;
+
+
+use linslin\yii2\curl;
+use yii\httpclient\Client;
+use yii\httpclient\FormatterInterface;
+use yii\httpclient\ParserInterface;
+use yii\httpclient\Response;
+use Eddmash\Clipboard\Clipboard;
+use yii\base\ErrorException;
 
 /**
  * Site controller
