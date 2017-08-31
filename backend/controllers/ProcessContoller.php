@@ -26,7 +26,7 @@ class ProcessController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index'],
+                        'actions' => ['logout', 'index','test-http'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
