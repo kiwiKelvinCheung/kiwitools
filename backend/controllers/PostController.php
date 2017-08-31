@@ -27,11 +27,11 @@ class PostController extends Controller
     /**
      * @inheritdoc
      */
-    public $rvt = 'FRIDCRTnd29Q1pNziwE9Oz6g7f_cqZ4fjBsavDdEP0C4--5AdM0fa9IC3HKYO94PsuW0hW32bxwuSs4Obw2IqZ_hner7zzoEzi_iY27qfHA1';
-    public $coco01id = 'HWPiUqVszEolmmnB5g4C15VckmVjjaEEG2I1T_qSTCtoX3JD2t3PPrS4kUMJ4W9uv1Gx_mRXoeW_mJKzT_tn8ZrLdpEbNvTx0gN3u3XE45oMPAXOeYQxmjePmvuGTjNhk4AZ7qT3hK0b81Jn8nhVuc43Di1xM3lXNZMbbdrrkhEDSwjrjvQakEKPn0Jb8oZEPvh6HE87Qlo_Ko18lpBYNSIJjFW-bgGwoBq58I1yivpaYT4gEDFUiZWbUcleuGFWg94_11Ye45urbOWyGSNjl1ERnikIJwDZlxxUk4QqNDgDFybpclW7NzFQrZbC8RZ_Vm0emaAZogAYhEcxT7BjaArWDZ_cwF6b44GwvTLqtHLH8c2t6FPIfL6hOwY8FrPlEJfDVDVpyrafe1xbI5v19ToZuxSQue__h_7ON5jBrOwgLUXSji-1ds9QRSHq29bGsUaw3d9qyM1Y2f3FbshG6FlroDAlTZ1mYMixNWkwQZcujQM0L-PT6pc6uWnAavkz';
-    public $cfduid = 'd9ae01210e07e9b42f4e9e9bd3dd600011504069691';
+    public $rvt = 'IJOEeh9mdNRmdN0kqOd391ivoXNbLplEBJnzV9jWGltEv-4Hn2E92cSDjbjnWAizZFT1yIviEMjTse13JEL1R99154nAnnWCXiiCzaBLSZ01';
+    public $coco01id = '-KjQ_CKmgYwX8LCMZSAHw17vxdlsEYbt-YgCLFXeDl69wa1rY1J2oK8RSpPYe56c11RJLLXQsLSf1It7sfmSHbJ9aUcgeOT6IqVbucHTVc00UIzOceHscSJ8GP50ojbevJDs8OA4UQoPOR5tOoDrHi4RjiYFr0WBIZhoSYOMpWUrrN_jOqdwcPx2FsLo6U994jjWUKFGxQeDmcLXqGIeupkRAFew3zvYbp4MzbwTEsnDhl7jx4e56OpOJtQb1EPGYAyvhsH6xlMJwJMqINvKe3rGVZPWqFWsVAPXvUb0IGvT2ZarIp9nrjp2csCC4Nry4FfC55Vx6eZAJzQlOXZgs91xQThmdL0robsvsb3gQFiHpoQsv4PBbMAiJK3rMDdxZ7dnxSAKbFaiB5yBZ7sUct5x0OKcDpRIrFveYPTBFffrikA0ZvCs16uLz4-mBy68RFj_SnAJn1CDptO8M2z5cWYITTeZfOI3Bzd0wNkvXFXwAGDmq4HSF-F5lJlo4EuL';
     public $_ga = 'GA1.2.628135975.1504071798';
     public $_gid = 'GA1.2.1524570596.1504071798';
+    public $this->cfduid = 'd9ae01210e07e9b42f4e9e9bd3dd600011504069691';
     const DATE_FORMAT = 'php:Y-m-d';
     public function behaviors()
     {
