@@ -65,7 +65,9 @@ class ProcessController extends Controller
             ],
         ];
     }
-
+    public function actionIndex(){
+        $this->redirect(['post/get-post']);
+    }
     public function actionTestHttp(){
         return $this->render('test-http');
     }
