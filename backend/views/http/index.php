@@ -17,6 +17,8 @@ use yii\httpclient\ParserInterface;
 use yii\httpclient\Response;
 use Eddmash\Clipboard\Clipboard;
 use yii\base\ErrorException;
+
+echo $userIP = Yii::$app->request->userIP;;
                 
 $client = new Client();
 $session = Yii::$app->session;
