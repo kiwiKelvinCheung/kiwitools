@@ -25,7 +25,11 @@
         "serhatozles/yii2-simplehtmldom": "dev-master",
         "jino5577/yii2-date-range-picker": "*",
         "eddmash/yii2-clipboard": "@dev",
-        "aryelds/yii2-sweet-alert": "@dev"
+        "aryelds/yii2-sweet-alert": "@dev",
+        "jonnyw/php-phantomjs": "4.*",
+        "symfony/dependency-injection": "3.4.x-dev",
+        "symfony/config": "3.4.x-dev",
+        "psr/container": "^1.0@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
