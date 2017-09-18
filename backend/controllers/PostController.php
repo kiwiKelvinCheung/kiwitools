@@ -32,6 +32,7 @@ class PostController extends Controller
     public $_ga = 'GA1.2.628135975.1504071798';
     public $_gid = 'GA1.2.1524570596.1504071798';
     public $cfduid = 'd9ae01210e07e9b42f4e9e9bd3dd600011504069691';
+    
     const DATE_FORMAT = 'php:Y-m-d';
     public function behaviors()
     {
