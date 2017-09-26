@@ -29,6 +29,7 @@ class PostController extends Controller
      */
     public $rvt = 'f-trtTZCE7vEc_68MhxLj3wGXApWHZP9LS4AO4IMvgCKVslJuYnd7-fMUPgWtf5U9NMNUxAzwMbYxyDceMeEMLLrVI3-1jkxRvnsp35UoSQ1';
     public $coco01id = 'Cpw-lJDXSF-lu9ef8VG35SsXFn6GQtNsxOstvGzaVd8bY0OF5QX_JElsk7mGO0bFugqQfFde7lbqcXUke4wnBNpvxtNtd4wZ8Dqf1S0SMONATd6ZiwxtBtcmHbUJ_4TKogoPajUvARXZL5yVPwopAFw9QiuR2F_TwYlrdl4DmGEbPOt151KIX02RXBkrszFAxK5emBtmaFyJp_3VSk46rhVnmYOn53Q7cHGo1TQtzm03YFhUWZfnFlDvfVx7_g_CQWCE1jwnGBWlZWml5YS2UHiUABGcTq3Zjgk3hAooInDQwc3iYoe6xCIeAPVOelKcAp7XyZwMCiXPW3ezfiZHQjLqATiT_Mxk2efTsAuBMUPz6kVvPC2WE6GGtm6Jw6WvSA8rRsJvwcvCnfqhhjpmbL-VZxN9_AQ78xU3E5r_H-68wB2DR_I8UD5rkcRdpNPSPS-Frh3pqqXCz821LbQG8P5ETH5XklYMdpkmFF1erPtMXJoD9bVvMlSHBkudNheV';
+    public $_ga = 'GA1.2.628135975.1504071798';
     public $_gid = 'GA1.2.1524570596.1504071798';
     public $cfduid = 'd9ae01210e07e9b42f4e9e9bd3dd600011504069691';
     
