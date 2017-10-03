@@ -80,7 +80,7 @@ class PostController extends Controller
 
     public function actionUpdatePostList(){
         $request = Yii::$app->request;
-        $max_page = $request->get('max_page',100);
+        $max_page = $request->get('max_page',50);
         $max_day = $request->get('max_day',7);
         $catId = $request->get('catId',0);
         $start_page = 0;
