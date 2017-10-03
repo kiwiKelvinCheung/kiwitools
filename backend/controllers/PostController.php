@@ -80,8 +80,8 @@ class PostController extends Controller
 
     public function actionUpdatePostList(){
         $request = Yii::$app->request;
-        $max_page = $request->get('max_page',50);
-        $max_day = $request->get('max_day',18);
+        $max_page = $request->get('max_page',100);
+        $max_day = $request->get('max_day',7);
         $catId = $request->get('catId',0);
         $start_page = 0;
         $start_day = 1;
@@ -137,6 +137,12 @@ class PostController extends Controller
                                 $find_post_title = $post_title->outertext;
                                 $substr = 'target="_blank"';
                                 $unable_pjax_title = str_replace($substr,$substr.' '.$disable_pjax_attr,$find_post_title);
+                                $real_cate_text = '';
+                                foreach($element->find('.color-red',0) as $post_cate){
+                                    $cate_text = $element->find('.color-red',1)->plaintext;
+                                    $real_cate_text = trim(preg_replace('/\[|\]/', '', $cate_text));
+                                    
+                                }
                                 foreach($post_title->find('strong') as $tag_strong_title){
                                     $exists = Post::find()->where(['txt_title'=>$tag_strong_title])->exists(); 
                                     if($exists){            
@@ -145,6 +151,7 @@ class PostController extends Controller
                                         $post = new CreatePost();
                                         $post->title = $unable_pjax_title;
                                         $post->txt_title = $tag_strong_title->plaintext;
+                                        $post->category = $real_cate_text;
                                     }
                                 }
 
@@ -163,15 +170,18 @@ class PostController extends Controller
                             }                    
                             foreach($element->find('.l-views') as $post_view){
                                 preg_match_all('!\d+!', $post_view, $p_view);
-                                $post->today_view = $p_view[0][0];
+
+                                $num_of_view = '';
+                                for($x = 0 ; $x < sizeof($p_view[0]);$x++){
+                                    $num_of_view .= $p_view[0][$x];
+                                }
+                                $post->today_view = (int)$num_of_view;
                             }                    
-                            foreach($element->find('.l-catId') as $post_cate){
-                                $post->category = $post_cate->outertext;
-                            }
+
                             if($exists){
                                 $post->save();
                             }else{
-                                $post->createpost();
+                                 $post->createpost();
                             }
                       }
                     $start_page++;
@@ -313,7 +323,9 @@ class PostController extends Controller
                             foreach($element->find('.title') as $post_title){
 
                                 $disable_pjax_attr ="data-pjax='0'";
+                                
                                 $find_post_title = $post_title->outertext;
+
                                 $substr = 'target="_blank"';
                                 $unable_pjax_title = str_replace($substr,$substr.' '.$disable_pjax_attr,$find_post_title);
                                 foreach($post_title->find('strong') as $tag_strong_title){
