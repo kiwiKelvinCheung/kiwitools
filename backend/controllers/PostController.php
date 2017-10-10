@@ -27,11 +27,12 @@ class PostController extends Controller
     /**
      * @inheritdoc
      */
-    public $rvt = 'f-trtTZCE7vEc_68MhxLj3wGXApWHZP9LS4AO4IMvgCKVslJuYnd7-fMUPgWtf5U9NMNUxAzwMbYxyDceMeEMLLrVI3-1jkxRvnsp35UoSQ1';
-    public $coco01id = 'ikOCbfagWsFGhKkVBMMgiR3XviZvzyS7HgX7_1BE8qZVu9FyneGX3rnt7OQ1HV_iw1MzvggdFBfZKQh-BR0Ov4uJeh9uER86ani8mtgOMXnqBIPK89Wjj0loha2jHYKljWD4EMx9lDHHrj9fyPH9NrBlPwD9cA5gD_BlklxPbDFOHtveNdT8DxA3tUaPK5ri7r4VZfXry8vfqP4i1X9ACUvZQbqel2C0Jdk1oNYK_2em2by1397rptXRkwnaYtjtax5HEHPf2UeezswqEKbyRXNOhKEpXTVt8czD3PXuNoMsa93GiRueyCM4QbMqfh410nnOXcFG80jNHg4jFrgZjpKweEwiigZ39ZUOQ6ukqT8L9abYVZ-sNBnFH5F2SEQ2Pm7EUlfANiq404TO-4prPOjzHyofcji0fptPZinLTq76st1TY9Q5GHKsmtW06OrkvmasZ9vSAiIkq4Nrudfu-7SU19FacXBLP6oVtOp1liY';
-    public $_ga = 'GA1.2.628135975.1504071798';
+    public $rvt = 'gE9sCfvP9AK3eow_pMtq4SGDZQpMJKl2HuCoB9XpVVCCEANvqI78AejPJZMskVI3QnTa1EBgvbAPKl6Pf1rpkK3hgCshdzMFc7wcW4o9uIA1';
+    public $coco01id = 'XtcWwbs_FU_pP-OzHBXVOEI1CeyeaO-HvALjGkX_X3-f2xh_jpOaG6eUHZDc_sENRGwkwwlPzgMAvzRRwoNf5OTqQNESj8MCUJgJ55Xe4JlnWIgpAFZdv8xRhYCwrtNIG_l8O7z3QFe2rzSUPsOpyihkxDfdAAE-gjAUnLfi3kaozuy6Lwe-VHmhBWKHAfiJjPQ1JE6aFjG7L_Z3f7hZqPb1kcL59G7pQCEMM7tvaUEyFYCUDUQb8z-zpSO2_YYfyVG17ExPtQ8gyGBnBvpKdkCISKQZYaBcTggXkYrndz12YwJkQRuak_xaQwXQtXx8GVLtIrVbgVUsVAoqzHuYXJM_f06zI3GieLvfsuykOCD3CxJTzXW1yEBUiIcHhxR0qUgktN41GheY35-BmVqiecwYiYihrnKt1i9GaM6ZUX1_h3q5gySOZfLdqkZq0tagw5iR_PkKekv_Z0J3nEmug0gYG1xmvO9g_CimFLwNTls';
+    public $cocomyid = 'p8mVpKpX6iFCPWOwsZrEKDAsBbsX6ZIq4H1HSCPSfIumFRLM05LiUb9MLSLRgq_7neezFZ03fhUQobbZSsyO4YLI9l-JbGO9K5LXukACr8cekVd7Xettb8urHpTvp701whz9jtpY638SVZgND9kpMesA1B9qn3mh9oZVjUh1yBr3NkfTRBbN52eVdmBxdl-Jh3uKi1QvVPQ4fjg7semK6HEcP-n1fGee4M5hdswvKM68JNhCDpxLYmDInY-F2b0jtSyBt-wAqWiAsZ0pNmfbhGVLcUUUeL17EEr2u6cBWnZcG7NnYyv8ELI04DGgvHwJI7LVnMaf-9PhkHx_NHTOOXIRYcJg4OevPbYYw7yHospdNaOivUyXLOtG4c9tGWWne2Np13e-MPTCo6XD3Nh9FoPNPmGwdizlHoxyhYSzIgKLuitdWUHABERKf9DQH4lB5j2e7bik0xh45CqS87sbOodQYKzi6gxn_ad7JfORG4A';
+    public $_ga = 'GA1.2.1603355584.1507389737';
     public $_gid = 'GA1.2.1524570596.1504071798';
-    public $cfduid = 'd9ae01210e07e9b42f4e9e9bd3dd600011504069691';
+    public $cfduid = 'dd730b973b379fbd5ed1b362cfeeac5ef1507389726';
     
     const DATE_FORMAT = 'php:Y-m-d';
     public function behaviors()
@@ -116,6 +117,7 @@ class PostController extends Controller
                         ['name' => '__cfduid', 'value' => $this->cfduid],
                         ['name' => '_ga', 'value' => $this->_ga],
                         ['name' => '_gid', 'value' => $this->_gid],
+                        ['name' => '.AspNet.ApplicationCookie', 'value' => $this->cocomyid],
                         ])
                       ->setMethod('post')
                       ->setUrl($request_url)
