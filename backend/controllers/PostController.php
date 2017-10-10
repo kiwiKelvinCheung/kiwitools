@@ -27,12 +27,12 @@ class PostController extends Controller
     /**
      * @inheritdoc
      */
-    public $rvt = 'gE9sCfvP9AK3eow_pMtq4SGDZQpMJKl2HuCoB9XpVVCCEANvqI78AejPJZMskVI3QnTa1EBgvbAPKl6Pf1rpkK3hgCshdzMFc7wcW4o9uIA1';
+    public $rvt = '4dYP-3s-BafanuK5dlKX_5BdxqWCYdwNYW__gWw0YZNvjyrC6CmULcVZOsNGNu0tyoWpPVyRDCHKpwO37t6eeVgfLc62O-O2WcUniSEPByY1';
     public $coco01id = 'XtcWwbs_FU_pP-OzHBXVOEI1CeyeaO-HvALjGkX_X3-f2xh_jpOaG6eUHZDc_sENRGwkwwlPzgMAvzRRwoNf5OTqQNESj8MCUJgJ55Xe4JlnWIgpAFZdv8xRhYCwrtNIG_l8O7z3QFe2rzSUPsOpyihkxDfdAAE-gjAUnLfi3kaozuy6Lwe-VHmhBWKHAfiJjPQ1JE6aFjG7L_Z3f7hZqPb1kcL59G7pQCEMM7tvaUEyFYCUDUQb8z-zpSO2_YYfyVG17ExPtQ8gyGBnBvpKdkCISKQZYaBcTggXkYrndz12YwJkQRuak_xaQwXQtXx8GVLtIrVbgVUsVAoqzHuYXJM_f06zI3GieLvfsuykOCD3CxJTzXW1yEBUiIcHhxR0qUgktN41GheY35-BmVqiecwYiYihrnKt1i9GaM6ZUX1_h3q5gySOZfLdqkZq0tagw5iR_PkKekv_Z0J3nEmug0gYG1xmvO9g_CimFLwNTls';
-    public $cocomyid = 'p8mVpKpX6iFCPWOwsZrEKDAsBbsX6ZIq4H1HSCPSfIumFRLM05LiUb9MLSLRgq_7neezFZ03fhUQobbZSsyO4YLI9l-JbGO9K5LXukACr8cekVd7Xettb8urHpTvp701whz9jtpY638SVZgND9kpMesA1B9qn3mh9oZVjUh1yBr3NkfTRBbN52eVdmBxdl-Jh3uKi1QvVPQ4fjg7semK6HEcP-n1fGee4M5hdswvKM68JNhCDpxLYmDInY-F2b0jtSyBt-wAqWiAsZ0pNmfbhGVLcUUUeL17EEr2u6cBWnZcG7NnYyv8ELI04DGgvHwJI7LVnMaf-9PhkHx_NHTOOXIRYcJg4OevPbYYw7yHospdNaOivUyXLOtG4c9tGWWne2Np13e-MPTCo6XD3Nh9FoPNPmGwdizlHoxyhYSzIgKLuitdWUHABERKf9DQH4lB5j2e7bik0xh45CqS87sbOodQYKzi6gxn_ad7JfORG4A';
+    public $cocomyid = 'lZv9iNZx9TcrSznFyUcwKUBY2Z5yN5K_pCkUsq39fUi6y324jsOep4GphdL21GIW1kkqmM4Xz4dPbfVXJzy_uPkeDooAndaeNeh17ONs85AWErGGCDUhNeosJZJnVCBU_3cNGIQJT43Kg8ExXslOveMScBwoQsPz-P1H8q6ddRzCtwGKJYA1nQQMXOqfmYZZ1gv6ainU_gzqo_CpmsARUNIzNqYs4PGaTnWf0HSpzw7QIFzVDOL6CTOJECXBBh_6fycV5ITtL2cZ85Rx_LYZxlRRiTeVHnHNisoXe2hKz-oHBTm6K8UgWhnL29rkVPXdqxAcBToPBZZROQ3D2RPlTJlSI1P1qV4u3Kusnc3Lh3eG4VoJ41ai5rnBLOBfPc78YkNeySNEmpggFPX2WOSoR2twv-R1gsEswjmJZsr5ktcZE4Pz1JmivbzjUYO3la9ndfbzyfgdFrThuWZgQVe9BVh5vdbDldR-VMCRilOVAj0';
     public $_ga = 'GA1.2.1603355584.1507389737';
     public $_gid = 'GA1.2.1524570596.1504071798';
-    public $cfduid = 'dd730b973b379fbd5ed1b362cfeeac5ef1507389726';
+    public $cfduid = 'd4a8e554fa4d97f2dbf3e031ee046a10a1507271384';
     
     const DATE_FORMAT = 'php:Y-m-d';
     public function behaviors()
@@ -81,7 +81,7 @@ class PostController extends Controller
 
     public function actionUpdatePostList(){
         $request = Yii::$app->request;
-        $max_page = $request->get('max_page',50);
+        $max_page = $request->get('max_page',35);
         $max_day = $request->get('max_day',7);
         $catId = $request->get('catId',0);
         $start_page = 0;
