@@ -140,8 +140,8 @@ class PostController extends Controller
                                 $substr = 'target="_blank"';
                                 $unable_pjax_title = str_replace($substr,$substr.' '.$disable_pjax_attr,$find_post_title);
                                 $real_cate_text = '';
-                                foreach($element->find('.color-red',0) as $post_cate){
-                                    $cate_text = $element->find('.color-red',1)->plaintext;
+                                foreach($element->find('.label-list',0) as $post_cate){
+                                    $cate_text = $element->find('.rounded-2x',1)->plaintext;
                                     $real_cate_text = trim(preg_replace('/\[|\]/', '', $cate_text));
                                     
                                 }
