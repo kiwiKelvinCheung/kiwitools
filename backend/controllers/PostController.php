@@ -30,8 +30,8 @@ class PostController extends Controller
     public $rvt = '4dYP-3s-BafanuK5dlKX_5BdxqWCYdwNYW__gWw0YZNvjyrC6CmULcVZOsNGNu0tyoWpPVyRDCHKpwO37t6eeVgfLc62O-O2WcUniSEPByY1';
     public $coco01id = 'XtcWwbs_FU_pP-OzHBXVOEI1CeyeaO-HvALjGkX_X3-f2xh_jpOaG6eUHZDc_sENRGwkwwlPzgMAvzRRwoNf5OTqQNESj8MCUJgJ55Xe4JlnWIgpAFZdv8xRhYCwrtNIG_l8O7z3QFe2rzSUPsOpyihkxDfdAAE-gjAUnLfi3kaozuy6Lwe-VHmhBWKHAfiJjPQ1JE6aFjG7L_Z3f7hZqPb1kcL59G7pQCEMM7tvaUEyFYCUDUQb8z-zpSO2_YYfyVG17ExPtQ8gyGBnBvpKdkCISKQZYaBcTggXkYrndz12YwJkQRuak_xaQwXQtXx8GVLtIrVbgVUsVAoqzHuYXJM_f06zI3GieLvfsuykOCD3CxJTzXW1yEBUiIcHhxR0qUgktN41GheY35-BmVqiecwYiYihrnKt1i9GaM6ZUX1_h3q5gySOZfLdqkZq0tagw5iR_PkKekv_Z0J3nEmug0gYG1xmvO9g_CimFLwNTls';
     public $cocomyid = 'lZv9iNZx9TcrSznFyUcwKUBY2Z5yN5K_pCkUsq39fUi6y324jsOep4GphdL21GIW1kkqmM4Xz4dPbfVXJzy_uPkeDooAndaeNeh17ONs85AWErGGCDUhNeosJZJnVCBU_3cNGIQJT43Kg8ExXslOveMScBwoQsPz-P1H8q6ddRzCtwGKJYA1nQQMXOqfmYZZ1gv6ainU_gzqo_CpmsARUNIzNqYs4PGaTnWf0HSpzw7QIFzVDOL6CTOJECXBBh_6fycV5ITtL2cZ85Rx_LYZxlRRiTeVHnHNisoXe2hKz-oHBTm6K8UgWhnL29rkVPXdqxAcBToPBZZROQ3D2RPlTJlSI1P1qV4u3Kusnc3Lh3eG4VoJ41ai5rnBLOBfPc78YkNeySNEmpggFPX2WOSoR2twv-R1gsEswjmJZsr5ktcZE4Pz1JmivbzjUYO3la9ndfbzyfgdFrThuWZgQVe9BVh5vdbDldR-VMCRilOVAj0';
-    public $_ga = 'GA1.2.1603355584.1507389737';
-    public $_gid = 'GA1.2.1524570596.1504071798';
+    public $_ga = 'GA1.2.94464146.1507522332';
+    public $_gid = 'GA1.2.493101457.1507522332';
     public $cfduid = 'd4a8e554fa4d97f2dbf3e031ee046a10a1507271384';
     
     const DATE_FORMAT = 'php:Y-m-d';
@@ -91,7 +91,7 @@ class PostController extends Controller
         $onedayTimestamp = 60*60*24;
         $timestamp_to_day = Yii::$app->formatter->asTimestamp($date);
         $timestamp_to_pre_day = $timestamp_to_day;
-        $url = 'http://www.coco01.net/user/dailyPost';
+        $url = 'http://www.cocomy.net/user/dailypost';
         while($start_day<$max_day){
             
             if($start_day!=0){
